@@ -1,2 +1,2 @@
 #!/bin/bash
-ps aux | grep -v -u $1 
+ps aux -U $1 --no-headers | grep -v  "      0     0"

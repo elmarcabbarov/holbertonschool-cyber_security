@@ -1,2 +1,0 @@
-holberton-cyber_security
-network_security

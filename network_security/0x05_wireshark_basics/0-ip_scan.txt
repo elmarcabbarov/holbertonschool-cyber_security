@@ -1,1 +1,1 @@
-ip.src == 172.22.101.90 && !tcp && !udp && !icmp
+ip.proto == 1

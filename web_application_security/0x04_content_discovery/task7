@@ -1,1 +1,0 @@
-gobuster fuzz -u http://web0x04.hbtn/FUZZ/hbtn-FUZZ -w list_fuzz --timeout 30s

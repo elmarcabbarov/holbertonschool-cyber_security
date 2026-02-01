@@ -1,1 +1,1 @@
-gobuster tftp -s 10.42.41.92 -w /usr/share/wordlists/dirb/common.txt
+gobuster tftp -s 10.42.41.92 -w /usr/share/wordlists/Seclist/Discovery/Web-content/tftp.fuzz.txt

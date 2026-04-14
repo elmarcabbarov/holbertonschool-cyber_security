@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n 1000 auth.log | grep "Accepted" | awk '{print $9}' | sort | uniq | head -n 1
+tail -n 1000 auth.log | grep "Accepted" | tail -n 1 | awk '{print $9}'

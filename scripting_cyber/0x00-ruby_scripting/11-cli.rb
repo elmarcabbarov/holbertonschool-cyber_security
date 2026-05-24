@@ -34,8 +34,13 @@ end
 
 if options[:list]
   if File.exist?(FILE_NAME)
-    File.readlines(FILE_NAME).each_with_index do |line, index|
-      puts "#{index + 1}. #{line.chomp}"
+    tasks = File.readlines(FILE_NAME)
+    # Əgər fayl boş deyilsə, əvvəlcə "Tasks:" başlığını çap edirik
+    if tasks.any?
+      puts "Tasks:"
+      tasks.each_with_index do |line, index|
+        puts "#{index + 1}. #{line.chomp}"
+      end
     end
   end
 end

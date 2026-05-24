@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'net/http'
 require 'uri'
+require 'json'
 
 # Göndərilən URL-ə HTTP GET sorğusu atan funksiya
 def get_request(url)
@@ -9,5 +10,8 @@ def get_request(url)
 
   puts "Response status: #{response.code} #{response.message}"
   puts "Response body:"
-  puts response.body
+
+  # Gələn body-ni oxuyub səliqəli (pretty) formata salırıq
+  parsed_body = JSON.parse(response.body)
+  puts JSON.pretty_generate(parsed_body)
 end

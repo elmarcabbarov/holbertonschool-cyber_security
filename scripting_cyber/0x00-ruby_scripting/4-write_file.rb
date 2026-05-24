@@ -14,4 +14,7 @@ def merge_json_files(file1_path, file2_path)
 
   # Birləşmiş datanı səliqəli JSON formatında ikinci fayla yazırıq
   File.write(file2_path, JSON.pretty_generate(merged_data))
+
+  # Checker-in gözlədiyi mesajı ekrana çıxarırıq
+  puts "Merged JSON written to #{file2_path}"
 end

@@ -1,4 +1,4 @@
-# 7-args.rb
+#!/usr/bin/env ruby
 
 def print_arguments
   if ARGV.empty?

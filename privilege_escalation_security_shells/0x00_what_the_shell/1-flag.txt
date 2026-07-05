@@ -1,1 +1,1 @@
-cat /home/user/f???
+CTF{who_needs_espace_when_u_have_bash_HASH : 25c8e897c72ffd1ca4ac16cb97b823cc}

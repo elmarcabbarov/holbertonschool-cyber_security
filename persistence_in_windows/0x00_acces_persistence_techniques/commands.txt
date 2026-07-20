@@ -1,0 +1,22 @@
+Get-ScheduledTask | Select-Object TaskName, State
+
+Get-ScheduledTask | ForEach-Object {
+    $info = $_
+    $desc = $_.Description
+    if ($desc -and $desc.Trim() -ne "") {
+        [PSCustomObject]@{
+            TaskName    = $info.TaskName
+            Description = $desc
+        }
+    }
+}
+
+
+
+Get-ScheduledTask | Where-Object {
+    $_.Triggers.CimClass.CimClassName -match "MSFT_TaskLogonTrigger|MSFT_TaskBootTrigger"
+} | Select-Object TaskName, Description
+
+
+
+
